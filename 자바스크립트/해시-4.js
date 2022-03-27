@@ -1,3 +1,4 @@
+// 베스트앨범
 function solution(genres, plays) {
     hashmap = {}
     for (let i = 0; i < genres.length; i++) {
