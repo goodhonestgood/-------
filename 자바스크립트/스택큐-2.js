@@ -1,6 +1,6 @@
 // 프린터
 
-function solution(priorities, location) 
+function solution(priorities, location) {
     let sequence = 0
 
     while (true) {
