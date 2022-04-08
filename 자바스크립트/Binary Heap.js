@@ -3,7 +3,7 @@ class Heap {
         this.data = []
     }
 
-    getParentUndex(i) {
+    getParentIndex(i) {
         return Math.floor((i-1)/2)
     }
 
@@ -29,10 +29,10 @@ class Heap {
     heapifyUp() {
         let currentIndex = this.data.length -1
 
-        while(this.data[currentIndex] > this.data[this.getParentUndex(currentIndex)]) {
-            this.swap(currentIndex, this.getParentUndex(currentIndex))
+        while(this.data[currentIndex] > this.data[this.getParentIndex(currentIndex)]) {
+            this.swap(currentIndex, this.getParentIndex(currentIndex))
 
-            currentIndex = this.getParentUndex(currentIndex)
+            currentIndex = this.getParentIndex(currentIndex)
         }
     }
 
